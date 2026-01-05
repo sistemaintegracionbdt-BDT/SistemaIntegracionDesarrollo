@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\adts;
+use App\coordinadores;
 use Illuminate\Support\Facades\Log;
 use GuzzleHttp\Client;
 
@@ -74,6 +75,11 @@ class TelegramWebhookController extends Controller
 
         if ($messageId) {
             $this->deleteMessage($chatId, $messageId);
+        }
+
+        $coordinadores = coordinadores::all();
+        foreach($coordinadores as $coordinador) {
+            $this->sendText($coordinador->TELEGRAM, "¡AVISO!\n\n" . $responseText);
         }
 
         return response()->json(['status' => 'success']);

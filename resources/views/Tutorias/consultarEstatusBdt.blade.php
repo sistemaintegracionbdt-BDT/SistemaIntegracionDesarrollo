@@ -668,7 +668,11 @@
                                             value="{{ $registro ? number_format((float) $registro->REAL, 0, '.', ',') : '' }}">
                                     </td>
                                     <td class="text-center">
-                                        -
+                                        @if($registro && $registro->META != 0)
+                                            {{ number_format(($registro->REAL * 100) / $registro->META, 2, '.', ',') }}%
+                                        @else
+                                            -    
+                                        @endif
                                     </td>
                                 </tr>
                             @endforeach
@@ -1216,6 +1220,21 @@
                         input.value = valorOriginal;
                     }
                 });
+            });
+
+            document.getElementById('botonDescargar').addEventListener('click', function() { 
+                let btn = this;
+
+                btn.innerHTML = `
+                    <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+                    Descargando...
+                `;
+                btn.classList.add('disabled');
+
+                setTimeout(() => {
+                    btn.innerHTML = 'Descargar';
+                    btn.classList.remove('disabled');
+                }, 3000);
             });
         </script>
 

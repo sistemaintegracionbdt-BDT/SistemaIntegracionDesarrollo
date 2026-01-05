@@ -544,22 +544,36 @@ class reporteGeneralTutorias {
                     'datosQueSeCapturan' => $datosQueSeCapturan,
                 ]);
 
-                $sheet->setAutoSize(true);
-
-                $sheet->cells('A1:AA' . $sheet->getHighestRow(), function($cells) { 
-                    $cells->setAlignment('center'); 
-                    $cells->setValignment('middle'); 
-                });
-                
-                /*$sheet->getStyle('A1:AA' . $sheet->getHighestRow())
-                ->getAlignment()
-                ->setWrapText(true);*/
-
-                $sheet->setWidth([ 
-                    'J' => 50,
-                    'O' => 50,
-                    'S' => 75,
-                    'X' => 75,
+                $sheet->setWidth([
+                    'A' => 20, 
+                    'B' => 20, 
+                    'C' => 20, 
+                    'D' => 20, 
+                    'E' => 20, 
+                    'F' => 20, 
+                    'G' => 20, 
+                    'H' => 20, 
+                    'I' => 20, 
+                    'J' => 2, 
+                    'K' => 20, 
+                    'L' => 20, 
+                    'M' => 20, 
+                    'N' => 20, 
+                    'O' => 20, 
+                    'P' => 20, 
+                    'Q' => 20, 
+                    'R' => 20, 
+                    'S' => 20, 
+                    'T' => 2, 
+                    'U' => 20, 
+                    'V' => 20, 
+                    'W' => 20, 
+                    'X' => 20, 
+                    'Y' => 20, 
+                    'Z' => 20, 
+                    'AA' => 20,
+                    'AB' => 20,
+                    'AC' => 20,
                 ]);
 
             });

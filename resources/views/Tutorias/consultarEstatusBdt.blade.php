@@ -1079,7 +1079,7 @@
             </div>
 
             <div class="d-flex mt-5">
-                <button id="botonGuardar" name="botonGuardar" class="btn btn-outline-info">
+                <button id="botonGuardar" name="botonGuardar" class="btn btn-outline-info me-2">
                     Guardar
                 </button>
                 <a id="botonDescargar" class="btn btn-outline-success" href="{{ route('exportar.reporte.general.tutorias') }}">

@@ -1234,7 +1234,7 @@
                 setTimeout(() => {
                     btn.innerHTML = 'Descargar';
                     btn.classList.remove('disabled');
-                }, 3000);
+                }, 5000);
             });
         </script>
 

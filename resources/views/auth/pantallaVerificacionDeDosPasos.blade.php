@@ -71,22 +71,22 @@
                                 @csrf
                                 <div class="row mb-4">
                                     <div class="col-2 px-1">
-                                        <input id="numero2FA1" type="text" class="form-control text-lg text-center" name="codigoParaVerificar2FA[]" maxlength="1" placeholder="_" aria-label="input2FA1" required>
+                                        <input id="numero2FA1" type="text" class="form-control text-lg text-center" name="codigoParaVerificar2FA[]" inputmode="numeric" pattern="[0-9]*" maxlength="1" placeholder="_" aria-label="input2FA1" autocomplete="off" required>
                                     </div>
                                     <div class="col-2 px-1">
-                                        <input id="numero2FA2" type="text" class="form-control text-lg text-center" name="codigoParaVerificar2FA[]" maxlength="1" placeholder="_" aria-label="input2FA2" required>
+                                        <input id="numero2FA2" type="text" class="form-control text-lg text-center" name="codigoParaVerificar2FA[]" inputmode="numeric" pattern="[0-9]*" maxlength="1" placeholder="_" aria-label="input2FA2" autocomplete="off" required>
                                     </div>
                                     <div class="col-2 px-1">
-                                        <input id="numero2FA3" type="text" class="form-control text-lg text-center" name="codigoParaVerificar2FA[]" maxlength="1" placeholder="_" aria-label="input2FA3" required>
+                                        <input id="numero2FA3" type="text" class="form-control text-lg text-center" name="codigoParaVerificar2FA[]" inputmode="numeric" pattern="[0-9]*" maxlength="1" placeholder="_" aria-label="input2FA3" autocomplete="off" required>
                                     </div>
                                     <div class="col-2 px-1">
-                                        <input id="numero2FA4" type="text" class="form-control text-lg text-center" name="codigoParaVerificar2FA[]" maxlength="1" placeholder="_" aria-label="input2FA4" required>
+                                        <input id="numero2FA4" type="text" class="form-control text-lg text-center" name="codigoParaVerificar2FA[]" inputmode="numeric" pattern="[0-9]*" maxlength="1" placeholder="_" aria-label="input2FA4" autocomplete="off" required>
                                     </div>
                                     <div class="col-2 px-1">
-                                        <input id="numero2FA5" type="text" class="form-control text-lg text-center" name="codigoParaVerificar2FA[]" maxlength="1" placeholder="_" aria-label="input2FA5" required>
+                                        <input id="numero2FA5" type="text" class="form-control text-lg text-center" name="codigoParaVerificar2FA[]" inputmode="numeric" pattern="[0-9]*" maxlength="1" placeholder="_" aria-label="input2FA5" autocomplete="off" required>
                                     </div>
                                     <div class="col-2 px-1">
-                                        <input id="numero2FA6" type="text" class="form-control text-lg text-center" name="codigoParaVerificar2FA[]" maxlength="1" placeholder="_" aria-label="input2FA6" required>
+                                        <input id="numero2FA6" type="text" class="form-control text-lg text-center" name="codigoParaVerificar2FA[]" inputmode="numeric" pattern="[0-9]*" maxlength="1" placeholder="_" aria-label="input2FA6" autocomplete="off" required>
                                     </div>
                                 </div>
                                 <div class="text-center">

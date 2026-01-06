@@ -37,5 +37,6 @@ class DatosCapturaEstadoTutoriasCerradasInternas extends Model
             'GASTO_NOMINA_GERENCIA',
             'GASTO_MANTENIMIENTOS_TOTAL',
             'GASTO_MANTENIMIENTOS_EJERCIDO',
+            'SOLICITUDES',
     ];
 }

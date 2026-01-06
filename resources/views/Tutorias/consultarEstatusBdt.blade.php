@@ -754,9 +754,9 @@
                             </th>
                         </tr>
                         <tr class="table-secondary"><!--30-->
-                            <th class="text-center" colspan="9">
-                                -
-                            </th>
+                            <td class="text-center" colspan="9">
+                                <input type="text" id="solicitudesAbiertasInternas" name="solicitudesAbiertasInternas" data-capturar value="{{ $datosQueSeCapturan['solicitudesAbiertasInternas'] ?? '-' }}">
+                            </td>
                         </tr>
                     </table>
                 </div>
@@ -1074,9 +1074,9 @@
                             </th>
                         </tr>
                         <tr class="table-secondary"><!--30-->
-                            <th class="text-center" colspan="9">
-                                -
-                            </th>
+                            <td class="text-center" colspan="9">
+                                <input type="text" id="solicitudesCerradasInternas" name="solicitudesCerradasInternas" data-capturar value="{{ $datosQueSeCapturan['solicitudesCerradasInternas'] ?? '-' }}">
+                            </td>
                         </tr>
                     </table>
                 </div>

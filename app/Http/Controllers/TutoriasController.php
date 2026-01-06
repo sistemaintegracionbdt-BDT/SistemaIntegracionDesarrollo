@@ -821,6 +821,7 @@ class TutoriasController extends Controller
             'gastoNominaGerencia' => DatosCapturaEstadoTutoriasAbiertasInternas::value('GASTO_NOMINA_GERENCIA'),
             'gastoMantenimientosTotal' => DatosCapturaEstadoTutoriasAbiertasInternas::value('GASTO_MANTENIMIENTOS_TOTAL'),
             'gastoMantenimientosEjercido' => DatosCapturaEstadoTutoriasAbiertasInternas::value('GASTO_MANTENIMIENTOS_EJERCIDO'),
+            'solicitudesAbiertasInternas' => DatosCapturaEstadoTutoriasAbiertasInternas::value('SOLICITUDES'),
 
             //BDTS CERRADAS INTERNAS
             'internetInfinitumPersonalInternoC' => DatosCapturaEstadoTutoriasCerradasInternas::value('INTERNET_INFINITUM_PERSONAL_INTERNO'),
@@ -850,6 +851,7 @@ class TutoriasController extends Controller
             'gastoNominaGerenciaC' => DatosCapturaEstadoTutoriasCerradasInternas::value('GASTO_NOMINA_GERENCIA'),
             'gastoMantenimientosTotalC' => DatosCapturaEstadoTutoriasCerradasInternas::value('GASTO_MANTENIMIENTOS_TOTAL'),
             'gastoMantenimientosEjercidoC' => DatosCapturaEstadoTutoriasCerradasInternas::value('GASTO_MANTENIMIENTOS_EJERCIDO'),
+            'solicitudesCerradasInternas' => DatosCapturaEstadoTutoriasCerradasInternas::value('SOLICITUDES'),
 
         ];
         
@@ -909,6 +911,7 @@ class TutoriasController extends Controller
             'GASTO_NOMINA_GERENCIA' => $datosRequest['gastoNominaGerencia'],
             'GASTO_MANTENIMIENTOS_TOTAL' => $datosRequest['gastoMantenimientosTotal'],
             'GASTO_MANTENIMIENTOS_EJERCIDO' => $datosRequest['gastoMantenimientosEjercido'],
+            'SOLICITUDES' => $datosRequest['solicitudesAbiertasInternas'],
 
         ];
 
@@ -941,6 +944,7 @@ class TutoriasController extends Controller
             'GASTO_NOMINA_GERENCIA' => $datosRequest['gastoNominaGerenciaC'],
             'GASTO_MANTENIMIENTOS_TOTAL' => $datosRequest['gastoMantenimientosTotalC'],
             'GASTO_MANTENIMIENTOS_EJERCIDO' => $datosRequest['gastoMantenimientosEjercidoC'],
+            'SOLICITUDES' => $datosRequest['solicitudesCerradasInternas'],
         ];
 
         foreach ($datosRequest['usuarios'] as $nombreCasa => $tipoDato) {

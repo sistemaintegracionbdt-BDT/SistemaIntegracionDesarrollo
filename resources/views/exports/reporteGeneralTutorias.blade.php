@@ -760,6 +760,8 @@
                         -    
                     @endif
                 </td>
+                <td>
+                </td>
                 <td colspan="2" style="background-color: #e8e8e8; text-align:center;"></td>
                 <td colspan="3" style="background-color: #e8e8e8; text-align:center;"></td>
                 <td style="background-color: #e8e8e8; text-align:center;"></td>
@@ -990,14 +992,12 @@
         </td>
         <td>
         </td>
-	    <th colspan="9">
-            Solicitudes relevantes del mes:
-        </th>
+        <td colspan="9" style="background-color: #bffbbc;">
+        </td>
         <td>
         </td>
-	    <th colspan="9">
-            Solicitudes relevantes del mes:
-        </th>
+        <td colspan="9" style="background-color: #e8e8e8;">
+        </td>
     </tr>
     <tr><!--31-->
         <td colspan="7" style="background-color: #bffbbc;"> 
@@ -1008,13 +1008,30 @@
         </td>
         <td>
         </td>
-	    <th colspan="9">
-            -
+	    <th colspan="9" style="background-color: #bffbbc;">
         </th>
         <td>
         </td>
-	    <th colspan="9">
-            -
+	    <th colspan="9" style="background-color: #e8e8e8;">
         </th>
+    </tr>
+    <tr>
+        <th colspan="29" style="background-color: #c6c6c6; text-align:center;">
+            Solicitudes relevantes del mes:
+        </th>
+    </tr>
+    <tr>
+        <td colspan="9" style="background-color: #e8e8e8;">
+        </td>
+        <td>
+        </td>
+        <td colspan="9" style="background-color: #e8e8e8; text-align:center;">
+            {{ $datosQueSeCapturan['solicitudesAbiertasInternas'] ?? '-' }}
+        </td>
+        <td>
+        </td>
+        <td colspan="9" style="background-color: #e8e8e8; text-align:center;">
+            {{ $datosQueSeCapturan['solicitudesCerradasInternas'] ?? '-' }}
+        </td>
     </tr>
 </table>

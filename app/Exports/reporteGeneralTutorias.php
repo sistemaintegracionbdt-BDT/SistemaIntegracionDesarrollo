@@ -507,6 +507,7 @@ class reporteGeneralTutorias {
                     'gastoNominaGerencia' => DatosCapturaEstadoTutoriasAbiertasInternas::value('GASTO_NOMINA_GERENCIA'),
                     'gastoMantenimientosTotal' => DatosCapturaEstadoTutoriasAbiertasInternas::value('GASTO_MANTENIMIENTOS_TOTAL'),
                     'gastoMantenimientosEjercido' => DatosCapturaEstadoTutoriasAbiertasInternas::value('GASTO_MANTENIMIENTOS_EJERCIDO'),
+                    'solicitudesAbiertasInternas' => DatosCapturaEstadoTutoriasAbiertasInternas::value('SOLICITUDES'),
 
                     //BDTS CERRADAS INTERNAS
                     'internetInfinitumPersonalInternoC' => DatosCapturaEstadoTutoriasCerradasInternas::value('INTERNET_INFINITUM_PERSONAL_INTERNO'),
@@ -536,6 +537,7 @@ class reporteGeneralTutorias {
                     'gastoNominaGerenciaC' => DatosCapturaEstadoTutoriasCerradasInternas::value('GASTO_NOMINA_GERENCIA'),
                     'gastoMantenimientosTotalC' => DatosCapturaEstadoTutoriasCerradasInternas::value('GASTO_MANTENIMIENTOS_TOTAL'),
                     'gastoMantenimientosEjercidoC' => DatosCapturaEstadoTutoriasCerradasInternas::value('GASTO_MANTENIMIENTOS_EJERCIDO'),
+                    'solicitudesCerradasInternas' => DatosCapturaEstadoTutoriasCerradasInternas::value('SOLICITUDES'),
 
                 ];
 

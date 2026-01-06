@@ -109,14 +109,14 @@ class TutoriasController extends Controller
         $coordinador = coordinadores::find($request->input('coordinador'));
         $telegram = new TelegramController();
 
-        $payload = $adt->NOMBRE . '%0A';
-        foreach ($adt->contactos as $contacto) {
-            $payload.='%0A <b> • '.$contacto->TIPO. " • </b> %0A";
-            $payload.='<i>NOMBRE:    '.$telegram->format(mb_strtolower($contacto->NOMBRE,'UTF-8'))."</i>%0A";
-            $payload.='TELEFONO: '.$telegram->format($contacto->TELEFONO)."%0A";
-            $payload.='CELULAR:    '.$telegram->format($contacto->CELULAR)."%0A";
-            $payload.='<i>CARGO:        '.$telegram->format(mb_strtolower($contacto->CARGO,'UTF-8'))."</i>%0A";
-            $payload.='CORREO:      '.$telegram->format($contacto->CORREO)."%0A";
+        $payload = $adt->NOMBRE . "\n"; 
+        foreach ($adt->contactos as $contacto) { 
+            $payload .= "\n<b> • " . $contacto->TIPO . " • </b>\n"; 
+            $payload .= "<i>NOMBRE: " . $telegram->format(mb_strtolower($contacto->NOMBRE,'UTF-8')) . "</i>\n"; 
+            $payload .= "TELEFONO: " . $telegram->format($contacto->TELEFONO) . "\n"; 
+            $payload .= "CELULAR: " . $telegram->format($contacto->CELULAR) . "\n"; 
+            $payload .= "<i>CARGO: " . $telegram->format(mb_strtolower($contacto->CARGO,'UTF-8')) . "</i>\n"; 
+            $payload .= "CORREO: " . $telegram->format($contacto->CORREO) . "\n"; 
         }
         $telegram->sendText($coordinador->TELEGRAM, $payload);
 

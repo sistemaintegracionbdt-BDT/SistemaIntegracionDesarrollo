@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loguin</title>
+    <title>Loguin BDT</title>
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/modals/" />
     <script src="../assets/js/color-modes.js"></script>
     <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" />

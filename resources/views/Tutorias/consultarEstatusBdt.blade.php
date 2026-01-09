@@ -361,7 +361,10 @@
                         </tr>
                         <tr><!--26-->
                             <th class="text-center table-info" colspan="9">
-                                7. Nuevas Solicitudes 2025 (<input type="text" class="d-inline-block w-auto" id="solicitudesRecibidas" name="solicitudesRecibidas" data-capturar value="{{ number_format($datosQueSeCapturan['solicitudesRecibidas'], 0, ".", ",") ?? '-' }}"> recibidas)
+                                7. Nuevas Solicitudes 2025 ( <label for="solicitudesRecibidas" class="mb-0">
+                                <span id="solicitudesRecibidas">
+                                 {{ number_format($datosQueSeCapturan['solicitudesRecibidas'] ?? 0, 0, ".", ",") }}
+                                </span></label> recibidas)
                             </th>
                         </tr>
                         <tr><!--27-->
